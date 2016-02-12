@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyle's Website</title>
+    <meta name="description" content="A website housing things about Kyle">
+    <meta name="author" content="Kyle Huntsman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/colors.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+	       $('.button-collapse').sideNav();
+        });
+    </script>
+
+    <nav>
+        <div class="nav-wrapper custom-gray z-depth-1">
+            <a href="#" class="brand-logo custom-brown-text">Kyle Huntsman</a>
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Resume</a></li>
+                <li><a href="#!$">Portfolio</a></li>
+                <li><a href="#!$">What I Do</a></li>
+                <li><a href="#!$">Contact</a></li>
+            </ul>
+
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#!">Resume</a></li>
+                <li><a href="#!$">Portfolio</a></li>
+                <li><a href="#!$">What I Do</a></li>
+                <li><a href="#!$">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="intro custom-brown darken-1 z-depth-1">
+        <!-- <h1 class="custom-gray-text">Kyle Huntsman</h1> -->
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <img src="images/logo-1448-865.png" id="landing-logo"/>
+            </div>
+        </div>
+        <h5 class="custom-gray custom-brown-text">I do software. hard.</h5>
+    </div>
+</body>
+</html>
