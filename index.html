@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
 
     <!--Google Icon Font-->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -17,38 +17,34 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link href="css/colors.css" type="text/css" rel="stylesheet" />
+    <link href="css/util.css" type="text/css" rel="stylesheet" />
 
     <!-- Imports -->
     <link rel="import" href="navbar.html">
 </head>
-<body>
+<body class="custom-brown darken-1">
    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/util.js"></script>
 
-    <script>
-        $(document).ready(function() {
-	       $('.button-collapse').sideNav();
-        });
-    </script>
-
     <script class="partial-script">
         load("navbar.html");
     </script>
 
-    <div class="intro custom-brown darken-1">
-        <!-- <h1 class="custom-gray-text">Kyle Huntsman</h1> -->
-        <!-- <div class="row"> -->
-            <div class="col s12 m12 l12">
-                <img src="images/logo-1448-865.png" id="landing-logo"/>
-            </div>
-        <!-- </div> -->
-        <h5 class="custom-gray custom-brown-text">I do software. hard.</h5>
-    </div>
+    <main class="fill-height">
+        <div class="container valign-wrapper fill-height">
+            <div class="right-align valign custom-gray-text darken-1" id="landing-message">
+                <div class="name">Kyle</div>
+                <div class="name">Huntsman</div>
+                <div class="message">I do software development</div>
 
-    <div class="custom-gray darken-1 valign-wrapper" id="main-footer">
-        <span class="valign">I made this website</span>
-    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
+        <span class="valign custom-brown-text">I made this website</span>
+    </footer>
 </body>
 </html>
