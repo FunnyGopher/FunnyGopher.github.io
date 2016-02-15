@@ -1,0 +1,64 @@
+<template id="template">
+    <style>
+        @import url(css/materialize.css);
+        @import url(css/style.css);
+        @import url(css/colors.css);
+        @import url(css/util.css);
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
+    </style>
+    <nav>
+        <div class="nav-wrapper custom-gray z-depth-1">
+            <a href="#" class="brand-logo custom-brown-text valign-wrapper">
+                <div class="valign-wrapper fill-height">
+                    <img class="valign" src="images/logo-168-100.png">
+                </div>
+            </a>
+            <div id="nav-links-external">
+                <a href="https://github.com/FunnyGopher" target="_blank">
+                    <i class="custom-brown-text darken-1 fa fa-github-alt"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">
+                    <i class="custom-brown-text darken-1 fa fa-linkedin"></i>
+                </a>
+            </div>
+
+    <!--    <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+    -->
+            <ul class="hide-on-med-and-down" id="nav-links-internal">
+                <li><a class="custom-brown-text darken-1" href="#!">Resume</a></li>
+                <li><a class="custom-brown-text darken-1" href="#!$">Portfolio</a></li>
+                <li><a class="custom-brown-text darken-1" href="#!$">What I Do</a></li>
+                <li><a class="custom-brown-text darken-1" href="#!$">Contact</a></li>
+            </ul>
+
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#!">Resume</a></li>
+                <li><a href="#!$">Portfolio</a></li>
+                <li><a href="#!$">What I Do</a></li>
+                <li><a href="#!$">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</template>
+<script> 
+    // thatDoc refers to the "importer", which is index.html
+    var thatDoc = document;
+    // thisDoc refers to the "importee", which is blog-post.html
+    var polyfillDoc = thatDoc._currentScript;
+    var thisDoc = (thatDoc._currentScript || thatDoc.currentScript).ownerDocument;
+
+    var template = thisDoc.querySelector('#template');
+
+    var navbarPrototype = Object.create(HTMLElement.prototype);
+    navbarPrototype.createdCallback = function() {
+        var root = this.createShadowRoot();
+        var clone = thatDoc.importNode(template.content, true);
+        root.appendChild(clone);
+    };
+
+    var XNavbar = thatDoc.registerElement('x-navbar', {
+        prototype: navbarPrototype
+    });
+</script>  

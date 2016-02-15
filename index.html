@@ -19,25 +19,24 @@
     <link href="css/colors.css" type="text/css" rel="stylesheet" />
     <link href="css/util.css" type="text/css" rel="stylesheet" />
 
+
+    <!-- webcomponents -->
+    <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <!-- materialize -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    <!-- webcomponents -->
-    <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.js"></script>
-
     <!-- Custom -->
-    <script type="text/javascript" src="js/util.js"></script>
+    <!-- <script type="text/javascript" src="js/util.js"></script> -->
 
     <!-- HTML Imports -->
-    <link rel="import" href="navbar.html">
+    <link rel="import" href="x-navbar.html">
 </head>
 <body class="custom-brown darken-1">
-    <script class="partial-script">
-        load("navbar.html");
-    </script>
+    <x-navbar></x-navbar>
 
     <main class="fill-height">
         <div class="container valign-wrapper fill-height">
@@ -45,7 +44,6 @@
                 <div class="name">Kyle</div>
                 <div class="name">Huntsman</div>
                 <div class="message">I do software development</div>
-
             </div>
         </div>
     </main>
