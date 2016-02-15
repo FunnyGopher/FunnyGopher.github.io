@@ -1,7 +1,7 @@
 <template id="template">
     <style>
         @import url(css/materialize.css);
-        @import url(css/style.css);
+        @import url(css/x-navbar.css);
         @import url(css/colors.css);
         @import url(css/util.css);
         @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
@@ -46,7 +46,6 @@
     // thatDoc refers to the "importer", which is index.html
     var thatDoc = document;
     // thisDoc refers to the "importee", which is blog-post.html
-    var polyfillDoc = thatDoc._currentScript;
     var thisDoc = (thatDoc._currentScript || thatDoc.currentScript).ownerDocument;
 
     var template = thisDoc.querySelector('#template');
