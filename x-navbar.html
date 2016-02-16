@@ -1,12 +1,14 @@
 <template id="template">
     <style>
-        @import url(bower_components/Materialize/dist/css/materialize.min.css);
         @import url(css/x-navbar.css);
-        @import url(css/colors.css);
-        @import url(css/util.css);
-        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
-    </style>
-        
+    </style>  
+    <script>
+        $(document).ready(function() {
+            $(document).on('WebComponentsReady', function() {
+                $(".button-collapse").sideNav();
+            })
+        });
+    </script>
     <nav>
         <div class="nav-wrapper custom-gray z-depth-1">
             <a href="index.html" class="brand-logo custom-brown-text valign-wrapper">
@@ -55,9 +57,10 @@
 
     var navbarPrototype = Object.create(HTMLElement.prototype);
     navbarPrototype.createdCallback = function() {
-        var root = this.createShadowRoot();
         var clone = thatDoc.importNode(template.content, true);
-        root.appendChild(clone);
+
+        var navbar = document.getElementsByTagName("x-navbar")[0];
+        navbar.appendChild(clone);
     };
 
     var XNavbar = thatDoc.registerElement('x-navbar', {
