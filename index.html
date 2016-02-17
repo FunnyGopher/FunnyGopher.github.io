@@ -28,27 +28,26 @@
     <!-- materialize -->
     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
 
-    <!-- custom -->
-    <script type="text/javascript" src="js/import-partial.js"></script>
-
     <!-- HTML Imports -->
     <link rel="import" href="x-navbar.html">
 </head>
-<body class="custom-brown darken-1 fill-height">
-    <x-navbar></x-navbar>
+<body>
+    <div class="custom-brown darken-1 fill-height" id="body-wrapper">
+        <x-navbar></x-navbar>
 
-    <div class="container fill-height">
-        <div class="row fill-height valign-wrapper">
-            <div class="col s12 m12 l12 header-valign right-align custom-gray-text darken-1">
-                <div class="title-big">Kyle</div>
-                <div class="title-big">Huntsman</div>
-                <div class="subtitle-big">I do software development</div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12 banner right-align custom-gray-text darken-1">
+                    <div class="title-big">Kyle</div>
+                    <div class="title-big">Huntsman</div>
+                    <div class="subtitle-big">I do software development</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
-        <span class="valign custom-brown-text">I also made this website</span>
-    </footer>
+        <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
+            <span class="valign custom-brown-text">I also made this website</span>
+        </footer>
+    </div>
 </body>
 </html>

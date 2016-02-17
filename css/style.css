@@ -1,5 +1,7 @@
 html, body {
-  height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .body {
@@ -7,48 +9,83 @@ html, body {
     font-size: 1.5em;
 }
 
-.header {
+#body-wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 28px;
+    position: relative;
+}
+
+.banner {
     text-transform: uppercase;
     width: 100%;
     margin-top: 4em;
 }
 
-.header-valign {
-    text-transform: uppercase;
-    width: 100%;
-    display: block;
+.banner .title-big {
+    font-weight: 900;
+    font-size: 15.3vw;
 }
 
-.header div, .header-valign div {
+.banner .subtitle-big {
+    font-weight: 300;
+    font-size: 4.25vw;
+}
+
+@media only screen and (min-width: 601px) {
+    /* 85 % */
+    .banner .title-big {
+        font-size: 15.3vw;
+    }
+
+    .banner .subtitle-big {
+        font-size: 4.25vw;
+    }   
+}
+
+@media only screen and (min-width: 993px) {
+    .banner .title-big{
+        font-size: 9vw;
+    }
+
+    .banner .subtitle-big {
+        font-size: 2.5vw;
+    }
+}
+
+.banner div {
     line-height: .8em;
 }
 
-.header .title, .header-valign .title {
+.banner .title {
     font-weight: 900;
     font-size: 12vmin;
 }
 
-.header .subtitle, .header-valign .subtitle {
+.banner .subtitle {
     font-weight: 300;
     font-size: 4vmin;
 }
 
-.header .title-big, .header-valign .title-big {
+/*.banner .title-big {
     font-weight: 900;
     font-size: 18vmin;
-}
+}*/
 
-.header .subtitle-big, .header-valign .subtitle-big {
+/*.banner .subtitle-big {
     font-weight: 300;
     font-size: 5vmin;
-}
+}*/
 
-#main-footer {
+footer {
+    bottom: 0;
     height: 28px;
+    left: 0;
+    position: absolute;
     width: 100%;
 }
 
-#main-footer span {
+footer span {
     font-weight: 300;
     font-size: .8em;
     margin-left: .5em;

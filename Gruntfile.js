@@ -15,6 +15,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 	grunt.registerTask('run', ['connect:server']);
 	grunt.registerTask('default', ['run']);
