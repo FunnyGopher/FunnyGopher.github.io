@@ -31,17 +31,17 @@
             </a>
    
             <ul class="hide-on-med-and-down" id="nav-links-internal">
-                <li><a class="custom-brown-text darken-1" href="index.html">Who I Am</a></li>
-                <li><a class="custom-brown-text darken-1" href="portfolio.html">Portfolio</a></li>
-                <li><a class="custom-brown-text darken-1" href="#!">Resume</a></li>
-                <li><a class="custom-brown-text darken-1" href="contact.html">Contact</a></li>
+                <li data-link="home"><a class="custom-brown-text darken-1" href="index.html">Who I Am</a></li>
+                <li data-link="portfolio"><a class="custom-brown-text darken-1" href="portfolio.html">Portfolio</a></li>
+                <li data-link="resume"><a class="custom-brown-text darken-1" href="#!">Resume</a></li>
+                <li data-link="contact"><a class="custom-brown-text darken-1" href="contact.html">Contact</a></li>
             </ul>
 
             <ul id="slide-out" class="side-nav custom-brown darken-1">
-                <li><a href="index.html">Who I Am</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#!">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li data-link="home"><a href=".">Who I Am</a></li>
+                <li data-link="portfolio"><a href="portfolio.html">Portfolio</a></li>
+                <li data-link="resume"><a href="#!">Resume</a></li>
+                <li data-link="contact"><a href="contact.html">Contact</a></li>
                 <li><a href="https://github.com/FunnyGopher" target="_blank">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">linkedIn</a></li>
             </ul>
@@ -54,13 +54,12 @@
     registerElement('x-navbar', navbar, function() {
 
         // Highlight the active list item
-        var htmlPageName = document.location.href.match(/[^\/]+$/)[0];
+        var linkType = $(this).attr('data-link');
         var uls = navbar.querySelectorAll('ul');
         $.each(uls, function() {
             var lis = this.querySelectorAll('li');
             $.each(lis, function(index, li) {
-                var aTag = li.children[0];
-                if(aTag.getAttribute('href') == htmlPageName) {
+                if(li.getAttribute('data-link') == linkType) {
                     $(li).addClass('active');
                 }
             })
