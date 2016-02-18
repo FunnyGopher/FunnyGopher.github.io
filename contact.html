@@ -14,37 +14,66 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!--materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="bower_components/Materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link href="css/colors.css" type="text/css" rel="stylesheet" />
     <link href="css/util.css" type="text/css" rel="stylesheet" />
+    <link href="css/contact.css" type="text/css" rel="stylesheet" />
 
     <!-- webcomponents -->
     <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.js"></script>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/jQuery/dist/jquery.min.js"></script>
 
     <!-- materialize -->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
 
     <!-- HTML Imports -->
     <link rel="import" href="x-navbar.html">
 </head>
-<body class="custom-brown darken-1">
-    <x-navbar></x-navbar>
+<body>
+    <div class="custom-brown darken-1 fill-height" id="body-wrapper">
+        <x-navbar></x-navbar>
 
-    <div class="container fill-height">
-        <div class="row valign-wrapper fill-height">
-            <div class="col s12 m12 l12 header-valign right-align custom-gray-text darken-1">
-                <div class="title-big">Contact Me</div>
-                <div class="subtitle-big">huntsman.kyle@gmail.com</div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12 banner right-align custom-gray-text darken-1">
+                    <div class="title" id="contact-me">Contact Me</div>
+                    <div class="subtitle">I might contact back</div>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col s8 m8 l8 offset-4 right-align right body custom-gray-text darken-1">
+                    <p>Feel free to contact me for whatever reason. Job offers and free pizza are always welcome.</p>
+                </div>
+            </div> -->
+
+            <div class="row">
+                <div id="contact-info" class="custom-gray-text darken-1">
+                    <a href="mailto:huntsman.kyle@gmail.com">
+                    <div class="col s12 m4 l4 custom-gray-text darken-1 right-align">
+                        <div class="name">Email</div>
+                        <div class="value">huntsman.kyle@gmail.com</div>
+                    </div></a>
+                    <a href="http://www.github.com/FunnyGopher" target="_blank">
+                    <div class="col s12 m4 l4 custom-gray-text darken-1">
+                        <div class="name">GitHub</div>
+                        <div class="value">FunnyGopher</div>
+                    </div></a>
+                    <a href="http://www.linkedin.com/in/huntsmankyle" target="_blank">
+                    <div class="col s12 m4 l4 custom-gray-text darken-1">
+                        <div class="name">linkedIn</div>
+                        <div class="value">Kyle Huntsman</div>
+                    </div></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
-        <span class="valign custom-brown-text">I also made this website</span>
-    </footer>
+        <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
+            <span class="valign custom-brown-text darken-1">I made this website</span>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,15 +1,15 @@
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-
+<script type="text/javascript" src="js/template-util.js"></script>
 <template id="template">
     <style>
-        @import url(css/materialize.css);
         @import url(css/x-navbar.css);
-        @import url(css/colors.css);
-        @import url(css/util.css);
-        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
-    </style>
-        
+    </style>  
+    <script>
+        $(document).ready(function() {
+            $(document).on('WebComponentsReady', function() {
+                $(".button-collapse").sideNav();
+            })
+        });
+    </script>
     <nav>
         <div class="nav-wrapper custom-gray z-depth-1">
             <a href="index.html" class="brand-logo custom-brown-text valign-wrapper">
@@ -37,7 +37,7 @@
                 <li><a class="custom-brown-text darken-1" href="contact.html">Contact</a></li>
             </ul>
 
-            <ul id="slide-out" class="side-nav">
+            <ul id="slide-out" class="side-nav custom-brown darken-1">
                 <li><a href="index.html">Who I Am</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#!">Resume</a></li>
@@ -49,21 +49,21 @@
     </nav>
 </template>
 <script> 
-    // thatDoc refers to the "importer", which is index.html
-    var thatDoc = document;
-    // thisDoc refers to the "importee", which is blog-post.html
-    var thisDoc = (thatDoc._currentScript || thatDoc.currentScript).ownerDocument;
+    // Stamp out a navbar and register it with it's own tag
+    var navbar = stampTemplate(document);
+    registerElement('x-navbar', navbar, function() {
 
-    var template = thisDoc.querySelector('#template');
-
-    var navbarPrototype = Object.create(HTMLElement.prototype);
-    navbarPrototype.createdCallback = function() {
-        var root = this.createShadowRoot();
-        var clone = thatDoc.importNode(template.content, true);
-        root.appendChild(clone);
-    };
-
-    var XNavbar = thatDoc.registerElement('x-navbar', {
-        prototype: navbarPrototype
+        // Highlight the active list item
+        var htmlPageName = document.location.href.match(/[^\/]+$/)[0];
+        var uls = navbar.querySelectorAll('ul');
+        $.each(uls, function() {
+            var lis = this.querySelectorAll('li');
+            $.each(lis, function(index, li) {
+                var aTag = li.children[0];
+                if(aTag.getAttribute('href') == htmlPageName) {
+                    $(li).addClass('active');
+                }
+            })
+        });
     });
 </script>

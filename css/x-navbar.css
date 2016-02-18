@@ -1,6 +1,6 @@
 /* Navbar */
 @media only screen and (min-width: 601px) {
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  x-navbar nav, x-navbar nav .nav-wrapper i, x-navbar nav a.button-collapse, x-navbar nav a.button-collapse i {
     height: 56px;
     line-height: 56px;
   }
@@ -9,49 +9,57 @@
   }
 }
 
-.brand-logo {
+x-navbar .brand-logo {
     height: 100%;
 }
 
-.brand-logo img {
+x-navbar .brand-logo img {
     max-height: 1.5em;
 }
 
-.brand-logo, .button-collapse {
+x-navbar .brand-logo, x-navbar .button-collapse {
     margin-left: .5em;
     margin-right: .5em;
 }
 
-#nav-links-internal {
+x-navbar #nav-links-internal {
     width: 100%;
     text-align: center;
 }
 
-#nav-links-internal li {
+x-navbar #nav-links-internal li {
     float: none;
     display: inline-block;
 }
 
-#nav-links-internal li a {
+x-navbar #nav-links-internal li a {
     font-weight: 300;
 }
 
-#nav-links-external {
+x-navbar #nav-links-external {
     position: absolute;
     padding: 0 1em 0 1em;
     right: 0;
 }
 
-#nav-links-external a {
+x-navbar #nav-links-external a {
     font-size: 1.2em;
 }
 
-#nav-links-external i:hover {
+x-navbar #nav-links-external i:hover {
     transition: background-color .3s;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-#nav-links-external i {
+x-navbar #nav-links-external i {
     transition: background-color .3s;
     padding: 0 1em 0 1em;
+}
+
+.side-nav li:hover, .side-nav li.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.side-nav a {
+    color: #716F6C;
 }
