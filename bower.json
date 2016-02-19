@@ -1,25 +1,12 @@
 {
   "name": "funnygopher-github-io",
-  "description": "Yar har fiddle-dee-dee",
-  "main": "index.js",
-  "authors": [
-    "FunnyGopher"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/FunnyGopher/funnygopher.github.io",
-  "moduleType": [
-    "node"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "private": true,
   "dependencies": {
-    "webcomponentsjs": "^0.7.20",
-    "Materialize": "materialize#^0.97.5",
-    "jquery": "^2.2.0"
+    "jquery": "~2.1.1",
+    "Materialize": "materialize#^0.97.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
