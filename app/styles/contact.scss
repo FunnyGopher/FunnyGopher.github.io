@@ -1,0 +1,50 @@
+@import 'media-sizes';
+
+.col {
+	margin-bottom: 5vw;
+}
+
+.banner-title {
+    font-size: 14.2vw;
+
+    @media only screen and (min-width: $min-width-small) {
+        font-size: 13.4vw;
+    }
+
+    @media only screen and (min-width: $min-width-medium) {
+        font-size: 7.9vw;
+    }
+ }
+
+.contact {
+	font-size: 4.25vw;
+	margin-top: 10vw;
+	text-align: right;
+
+	@media only screen and (min-width: $min-width-small) {
+        font-size: 2.2vw;
+    	margin-top: 4vw;
+    }
+
+    @media only screen and (min-width: $min-width-medium) {
+        font-size: 1.8vw;
+    }
+
+    @media only screen and (min-width: 2200px) {
+		font-size: 1.3vw;
+	}
+}
+
+.contact-name {
+	text-align: right;
+	font-weight: 900;
+	line-height: .8em;
+}
+
+.contact-value {
+	text-align: right;
+	font-weight: 300;
+	line-height: .8em;
+}
+
+@import 'footer';

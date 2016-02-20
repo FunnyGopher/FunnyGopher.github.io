@@ -1,8 +1,8 @@
 function registerElement(tagName, clone, callback) {
     var proto = Object.create(HTMLElement.prototype);
     proto.createdCallback = function() {
-    	callback.call(this);
-    	this.appendChild(clone);
+        callback.call(this);
+        this.appendChild(clone);
     };
     var element = document.registerElement(tagName, {
         prototype: proto
