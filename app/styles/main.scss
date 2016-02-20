@@ -31,6 +31,7 @@ html, body {
 
 .banner {
     text-transform: uppercase;
+    text-align: right;
     width: 100%;
     margin-top: 10vw;
 
@@ -43,7 +44,7 @@ html, body {
     font-weight: 900;
     font-size: 15.3vw;
 
-    @media only screen and (min-width: $min-width-medium) {
+    @media only screen and (min-width: $screen-medium) {
         font-size: 9vw;
     }
 }
@@ -52,21 +53,21 @@ html, body {
     font-weight: 300;
     font-size: 4.25vw;
 
-    @media only screen and (min-width: $min-width-medium) {
+    @media only screen and (min-width: $screen-medium) {
         font-size: 2.5vw;
     }
 }
 
 .banner-text {
-    text-align: right;
     font-weight: 300;
     font-size: 4vw;
 
-    @media only screen and (min-width: $min-width-small) {
+    @media only screen and (min-width: $screen-small) {
+        text-align: right;
         font-size: 2.5vw;
     }
 
-    @media only screen and (min-width: $min-width-medium) {
+    @media only screen and (min-width: $screen-medium) {
         font-size: 1.5vw;
     }
 }
@@ -78,4 +79,29 @@ html, body {
 
 
 
-@import 'footer';
+
+/* **************** *\
+
+    #Util
+
+\* **************** */
+
+.center-when.small {
+    @media only screen and (max-width: $screen-small - 1) {
+        width: 100%;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        text-align: center;
+    }
+}
+
+.center-when.medium {
+    @media only screen and (max-width: $screen-medium - 1) {
+        width: 100%;
+        margin-left: 0;
+        left: auto;
+        right: auto;
+        text-align: center;
+    }
+}
