@@ -1,4 +1,8 @@
 {
+  "name": "funnygopher-github-io",
+  "version": "1.0.0",
+  "description": "Yar har fiddle-dee-dee",
+  "author": "Kyle Huntsman <huntsman.kyle@gmail.com>",
   "private": true,
   "engines": {
     "node": ">=0.12.0"
