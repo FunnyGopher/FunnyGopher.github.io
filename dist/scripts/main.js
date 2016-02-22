@@ -1,1 +1,0 @@
-"use strict";function registerElement(e,t,r){var n=Object.create(HTMLElement.prototype);n.createdCallback=function(){r.call(this),this.appendChild(t)};var c=document.registerElement(e,{prototype:n});return c}function stampTemplate(e){var t=(e._currentScript||e.currentScript).ownerDocument,r=t.querySelector("#template"),n=e.importNode(r.content,!0);return n}
