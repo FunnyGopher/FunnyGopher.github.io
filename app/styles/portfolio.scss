@@ -57,11 +57,10 @@
 
     .project-img {
         text-align: center;
-        width: 100%;
 
         img {
             margin-top: 2.5vw;
-            width: 100%;
+            max-width: 100%;
             height: auto;
         }
     }
