@@ -19,9 +19,9 @@
 .project {
     margin-top: 2.5vw;
     margin-bottom: 2.5vw;
-    .project-description {
 
-        .col { float:right; }
+    .project-description {
+        float:right;
 
         h1 {
             width: 100%;
@@ -59,11 +59,11 @@
         text-align: center;
 
         img {
-            width: 50vw;
-            height: auto;
+            margin-top: 2.5vw;
+            width: auto;
 
             @media only screen and (min-width: $screen-small) {
-                width: 75%;
+                width: 100%;
             }
         }
     }
@@ -73,7 +73,7 @@
     @extend .project;
 
     .project-description {
-        .col { float: left; }
+        float: left;
 
         h1 {
             text-align: left;
