@@ -1,0 +1,65 @@
+.project {
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+
+    .project-description {
+        float:right;
+
+        h1 {
+            width: 100%;
+            text-align: right;
+            font-weight: 900;
+            font-size: 2rem;
+            margin-bottom: 0;
+
+            @media only screen and (min-width: $screen-small) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (min-width: $screen-medium) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            text-align: right;
+            font-size: 15px;
+            margin-top: .5em;
+
+            @media only screen and (min-width: $screen-small) {
+                font-size: 17px;
+            }
+
+            @media only screen and (min-width: $screen-medium) {
+                font-size: 19px;
+            }
+        }
+    }
+
+    .project-img {
+        text-align: center;
+
+        img {
+            margin-top: 2.5vw;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.project-alt{
+    @extend .project;
+
+    .project-description {
+        float: left;
+
+        h1 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}
