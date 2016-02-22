@@ -1,9 +1,5 @@
 @import 'media-sizes';
 
-.col {
-	margin-bottom: 5vw;
-}
-
 .banner-title {
     font-size: 14.2vw;
 
@@ -15,19 +11,18 @@
         font-size: 11.1vw;
     }
 
-    @media only screen and (min-width: 1820px) {
-        font-size: 7.9vw;
+    @media only screen and (min-width: 1280px) {
+        font-size: 10.5vw;
     }
  }
 
 .contact {
 	font-size: 4.25vw;
-	margin-top: 10vw;
+	margin-bottom: 10vw;
 	text-align: right;
 
 	@media only screen and (min-width: $screen-small) {
-        font-size: 2.2vw;
-    	margin-top: 4vw;
+    	margin-bottom: 8vw;
     }
 
     @media only screen and (min-width: $screen-medium) {
