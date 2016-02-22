@@ -4,7 +4,7 @@
     font-size: 14.2vw;
 
     @media only screen and (min-width: $screen-small) {
-        font-size: 10.2vw;
+        font-size: 9.9vw;
     }
 
     @media only screen and (min-width: $screen-medium) {
@@ -17,16 +17,20 @@
  }
 
 .project {
-
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
     .project-description {
+
+        .col { float:right; }
+
         h1 {
             width: 100%;
+            text-align: right;
             font-weight: 900;
             font-size: 2rem;
             margin-bottom: 0;
 
             @media only screen and (min-width: $screen-small) {
-                text-align: right;
                 font-size: 2.5rem;
             }
 
@@ -37,11 +41,11 @@
 
         p {
             font-weight: 300;
+            text-align: right;
             font-size: 15px;
             margin-top: .5em;
 
             @media only screen and (min-width: $screen-small) {
-                text-align: right;
                 font-size: 17px;
             }
 
@@ -50,10 +54,34 @@
             }
         }
     }
-    
 
     .project-img {
+        text-align: center;
 
+        img {
+            width: 50vw;
+            height: auto;
+
+            @media only screen and (min-width: $screen-small) {
+                width: 75%;
+            }
+        }
+    }
+}
+
+.project-alt{
+    @extend .project;
+
+    .project-description {
+        .col { float: left; }
+
+        h1 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
     }
 }
 

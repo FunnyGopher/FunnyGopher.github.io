@@ -60,12 +60,15 @@ html, body {
 
 
 
-
 /* **************** *\
 
     #Util
 
 \* **************** */
+
+.divider {
+    background-color: #B3B1AF;
+}
 
 .center-when.small {
     @media only screen and (max-width: $screen-small - 1) {
