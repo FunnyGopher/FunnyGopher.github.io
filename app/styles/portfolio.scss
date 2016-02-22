@@ -61,13 +61,8 @@
 
         img {
             margin-top: 2.5vw;
-            width: auto;
-            height: 100%;
-
-             @media only screen and (min-width: $screen-small) {
-                width: 100%;
-                height: auto;
-            }
+            width: 100%;
+            height: auto;
         }
     }
 }
