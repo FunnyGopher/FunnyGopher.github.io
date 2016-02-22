@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyle's Website</title>
+    <meta name="description" content="A website housing things about Kyle">
+    <meta name="author" content="Kyle Huntsman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- build:css /styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/colors.css"/>
+    <link rel="stylesheet" href="/styles/util.css"/>
+    <link rel="stylesheet" href="/styles/x-navbar.css"/>
+    <!-- endbuild -->
+
+    <!-- build:css /styles/objectives.css -->
+    <link rel="stylesheet" href="/styles/objectives.css"/>
+    <!-- endbuild -->
+
+    <!-- build:js /scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Materialize/bin/materialize.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js /scripts/main.js -->
+    <script src="/scripts/template-util.js"></script>
+    <!-- endbuild -->
+
+    <!-- HTML Imports -->
+    <link rel="import" href="/components/x-navbar.html">
+</head>
+<body>
+	<div class=" body-wrapper custom-brown darken-1">
+		<x-navbar data-link="objectives"></x-navbar>
+
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m12 l12 banner center-when small custom-gray-text darken-1">
+					<div class="banner-title">Stuff I work on</div>
+					<div class="banner-subtitle">its pretty sweet</div>
+				</div>
+			</div>
+
+            <!-- CrowdDJ -->
+            <div class="project row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>CrowdDJ</h1>
+                        <p>A desktop and Android application that allow for groups of people to play their music like a Jukebox. Songs are loaded into the desktop application, and users can request songs via the Android application. Uses H2 Database for local storage, and embedded Jetty server for the mobile app to talk to, and JavaFX for the front end.</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/200x350/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- BwaaahButton -->
+            <div class="project-alt row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>BwaaahButton</h1>
+                        <p>A small Android application that plays the dramatic bwaaah sound from the movie, "Inception." Also cycles through a couple random movie quotes every time the sound is played. Makes any situation sound like an epic movie. Use with caution.</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/200x350/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Partí -->
+            <div class="project row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Partí</h1>
+                        <p>An Android application that helps organize wicked parties. Hosts can create parties to invite people, and invitees and accept or decline invitations. The app also helps invitees with directions and such.</p>
+
+                        <p>Uses H2 Database for local storage and a MySQL server with PHP to save events remotely.</p>
+
+                        <p><strong>Team: </strong>Myself, Brandon Olson & Justin Fern</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/200x350/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Perspective Rectifier -->
+            <div class="project-alt row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Perspective Rectifier</h1>
+                        <p>This one's cool. Changes the perspective of an image using matrix calculation concepts we learned in Linear Algebra. And you thought you'd never need to learn higher level math.</p>
+
+                        <p><strong>Team: </strong>Myself, Brandon Olson & Nathan Reline</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/350x250/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Scheduler -->
+            <div class="project row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Scheduler</h1>
+                        <p>A scheduling application that would schedule activities for you, planning around things you're already doing.</p>
+
+                        <p>It was also a failure in back end Java web service functionality. Many common back end tools were used for the first time including Apache Tomcat, H2 Database, Maven, and JavaFX, which we tried to use as a front end.</p>
+
+                        <p><strong>Team: </strong>Myself, Brandon Olson, Justin Fern & Nathan Reline</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/350x250/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Air Horn Alarm Clock -->
+            <div class="project-alt row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Air Horn Alarm Clock</h1>
+                        <p>Uses python running on a Raspberry Pi 2 to wake you the f@#$ up. All hardware was bought and hand assembled into a custom made accrylic box.</p>
+                        <p><strong>Team: </strong>Myself & Brandon Olson</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/350x350/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Fredricks Quest for Hair -->
+            <div class="project row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Fredrick's Quest for Hair</h1>
+                        <p>Mustaches and Beards! This was a fun little game made using Python and Pygame during a 48 hour game jam. Run your way through a barbershop on your quest for the ultimate golden locks!</p>
+                        <p><strong>Team: </strong>Myself, Nathan Reline, Austin Ronquillo, & Ryan Simpson</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="http://placehold.it/350x250/61605D">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- This Website -->
+            <div class="project-alt row">
+                <div class="project-description col s12 m7 l8 center-when small">
+                    <div class="custom-gray-text darken-1">
+                        <h1>Kyles.Place</h1>
+                        <p>I actually made this website too. From scratch. I learned tons about front end development writing this. Uses HTML5 with Webcomponents, JavaScript, and Materialize. See, I can write in languages other than Java.</p>
+                    </div>  
+                </div>
+                <div class="project-img col s12 m5 l4">
+                    <img src="/images/logo-1448-865.png">
+                </div>
+            </div>
+            <div class="divider"></div>
+		</div>
+
+		<footer class="custom-gray darken-1 valign-wrapper">
+			
+		</footer>
+	</div>
+</body>
+</html>
