@@ -30,11 +30,11 @@ html, body {
 \* **************** */
 
 .banner {
+    padding-top: 10vw;
+    padding-bottom: 5vw;
     text-transform: uppercase;
     text-align: right;
     width: 100%;
-    margin-top: 10vw;
-    margin-bottom: 5vw;
 
     div {
         line-height: .8em;
@@ -71,7 +71,7 @@ html, body {
     background-color: #B3B1AF;
 }
 
-.center-when.small {
+.center-when-small {
     @media only screen and (max-width: $screen-small - 1) {
         width: 100%;
         margin-left: 0;
@@ -81,7 +81,7 @@ html, body {
     }
 }
 
-.center-when.medium {
+.center-when-medium {
     @media only screen and (max-width: $screen-medium - 1) {
         width: 100%;
         margin-left: 0;

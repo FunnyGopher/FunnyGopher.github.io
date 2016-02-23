@@ -1,18 +1,19 @@
 .project {
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     .project-description {
         float:right;
 
         h1 {
             width: 100%;
-            text-align: right;
+            text-align: center;
             font-weight: 900;
             font-size: 2rem;
             margin-bottom: 0;
 
             @media only screen and (min-width: $screen-small) {
+                text-align: right;
                 font-size: 2.5rem;
             }
 
@@ -23,11 +24,12 @@
 
         p {
             font-weight: 300;
-            text-align: right;
+            text-align: center;
             font-size: 15px;
             margin-top: .5em;
 
             @media only screen and (min-width: $screen-small) {
+                text-align: right;
                 font-size: 17px;
             }
 
@@ -55,11 +57,15 @@
         float: left;
 
         h1 {
-            text-align: left;
+            @media only screen and (min-width: $screen-small) {
+                text-align: left;
+            }
         }
 
         p {
-            text-align: left;
+            @media only screen and (min-width: $screen-small) {
+                text-align: left;
+            }
         }
     }
 }

@@ -4,70 +4,68 @@
 
 \* ***************************** */
 
-$media-small: "only screen and (min-width: 601px)";
+@import 'media-sizes';
 
-x-navbar {
 
-    .brand-logo {
-        height: 100%;
+.brand-logo {
+    height: 100%;
+}
+
+.brand-logo, .button-collapse {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+nav img {
+    max-height: 1.5em;
+}
+
+#nav-links-internal {
+    width: 100%;
+    text-align: center;
+
+    li {
+        float: none;
+        display: inline-block;
     }
 
-    .brand-logo, .button-collapse {
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-
-    img {
-        max-height: 1.5em;
-    }
-
-    #nav-links-internal {
-        width: 100%;
-        text-align: center;
-
-        li {
-            float: none;
-            display: inline-block;
-        }
-
-        a {
-            font-weight: 300;
-        }
-    }
-
-    #nav-links-external {
-        position: absolute;
-        padding: 0 1em 0 1em;
-        right: 0;
-
-        a {
-            font-size: 1.2em;
-        }
-
-        i {
-            transition: background-color .3s;
-            padding: 0 1em 0 1em;
-        }
-
-        i:hover {
-            transition: background-color .3s;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-    }
-
-    .side-nav {
-        
-        li:hover, li.active {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        a {
-            color: #716F6C;
-        }
+    a {
+        font-weight: 300;
     }
 }
 
-@media #{media-small} {
+#nav-links-external {
+    position: absolute;
+    padding: 0 1em 0 1em;
+    right: 0;
+
+    a {
+        font-size: 1.2em;
+    }
+
+    i {
+        transition: background-color .3s;
+        padding: 0 1em 0 1em;
+    }
+
+    i:hover {
+        transition: background-color .3s;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.side-nav {
+    
+    li:hover, li.active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+        color: #716F6C;
+    }
+}
+
+@media only screen and (min-width: $screen-small) {
   x-navbar nav, x-navbar nav .nav-wrapper i, x-navbar nav a.button-collapse, 
   x-navbar nav a.button-collapse i {
     height: 56px;
