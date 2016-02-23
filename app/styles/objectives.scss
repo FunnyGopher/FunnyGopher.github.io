@@ -3,7 +3,42 @@
 @import 'project';
 
 .objective {
-	
+	margin-top: 2.5vw;
+
+    .objective-description {
+        float:left;
+
+        h1 {
+            width: 100%;
+            text-align: left;
+            font-weight: 900;
+            font-size: 2rem;
+            margin-bottom: 0;
+
+            @media only screen and (min-width: $screen-small) {
+                font-size: 2.5rem;
+            }
+
+            @media only screen and (min-width: $screen-medium) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            text-align: left;
+            font-size: 15px;
+            margin-top: .5em;
+
+            @media only screen and (min-width: $screen-small) {
+                font-size: 17px;
+            }
+
+            @media only screen and (min-width: $screen-medium) {
+                font-size: 19px;
+            }
+        }
+    }
 }
 
 @import 'footer';
