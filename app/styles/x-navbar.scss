@@ -6,7 +6,6 @@
 
 @import 'media-sizes';
 
-
 .brand-logo {
     height: 100%;
 }
@@ -66,12 +65,8 @@ nav img {
 }
 
 @media only screen and (min-width: $screen-small) {
-  x-navbar nav, x-navbar nav .nav-wrapper i, x-navbar nav a.button-collapse, 
-  x-navbar nav a.button-collapse i {
+nav, nav .nav-wrapper i, nav a.button-collapse, 
+nav a.button-collapse i {
     height: 56px;
     line-height: 56px;
-  }
-  .navbar-fixed {
-    height: 56px;
-  }
 }
