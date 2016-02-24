@@ -20,5 +20,6 @@ function stampTemplate(theDocument) {
 $(document).ready(function() {
     $(document).on('WebComponentsReady', function() {
         $(".button-collapse").sideNav();
+        $('.scrollspy').scrollSpy();
     })
 });

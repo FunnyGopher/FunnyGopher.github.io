@@ -2,6 +2,39 @@
 
 @import 'project';
 
+.table-of-contents {
+    top: 0;
+    position: fixed;
+    display: block;
+    margin-top: 250px;
+    padding-top: 45px;
+}
+
+.table-of-contents {
+    a {
+        display: inline-block;
+        font-weight: 300;
+        color: #716F6C;
+        padding-left: 20px;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: .4;
+        display: inline-block;
+    }
+
+    a:hover {
+        color: #716F6C;
+        padding-left: 19px;
+        border-left: 1px solid #716F6C;
+    }
+
+    a.active {
+        font-weight: 500;
+        padding-left: 18px;
+        border-left: 2px solid #716F6C;
+    }
+}
+
 .objective {
 	padding-top: 2.5rem;
     padding-bottom: 1rem;
@@ -14,11 +47,11 @@
             text-align: left;
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 3.5rem;
+            font-size: 10vw;
             margin-bottom: 0;
 
             @media only screen and (min-width: $screen-small) {
-                font-size: 4rem;
+                font-size: 7vw;
             }
 
             @media only screen and (min-width: $screen-medium) {
@@ -26,7 +59,7 @@
             }
 
             @media only screen and (min-width: 1280px) {
-                font-size: 5rem;
+                font-size: 4rem;
             }
         }
 

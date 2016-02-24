@@ -64,6 +64,10 @@ nav img {
     }
 }
 
+.navbar-fixed {
+    height: 56px;
+}
+
 @media only screen and (min-width: $screen-small) {
     nav, nav .nav-wrapper i, nav a.button-collapse, 
     nav a.button-collapse i {
