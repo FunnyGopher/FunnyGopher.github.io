@@ -16,3 +16,10 @@ function stampTemplate(theDocument) {
     var clone = theDocument.importNode(template.content, true);
     return clone;
 }
+
+$(document).ready(function() {
+    $(document).on('WebComponentsReady', function() {
+        $(".button-collapse").sideNav();
+        $('.scrollspy').scrollSpy();
+    })
+});

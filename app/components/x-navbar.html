@@ -1,48 +1,45 @@
 <template id="template">
-    <script>
-        $(document).ready(function() {
-            $(document).on('WebComponentsReady', function() {
-                $(".button-collapse").sideNav();
-            })
-        });
-    </script>
-    <nav>
-        <div class="nav-wrapper custom-gray z-depth-1">
-            <a href="/" class="brand-logo custom-brown-text valign-wrapper">
-                <div class="valign-wrapper fill-height">
-                    <img src="/images/logo-168-100.png">
+    <div class="navbar-fixed">
+        <nav class="custom-gray custom-brown-text z-depth-1">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo valign-wrapper">
+                    <div class="valign-wrapper fill-height">
+                        <img src="/images/logo-168-100.png">
+                    </div>
+                </a>
+                <div class="hide-on-med-and-down" id="nav-links-external">
+                    <a href="https://github.com/FunnyGopher" target="_blank">
+                        <i class="custom-brown-text darken-1 fa fa-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">
+                        <i class="custom-brown-text darken-1 fa fa-linkedin"></i>
+                    </a>
                 </div>
-            </a>
-            <div class="hide-on-med-and-down" id="nav-links-external">
-                <a href="https://github.com/FunnyGopher" target="_blank">
-                    <i class="custom-brown-text darken-1 fa fa-github-alt"></i>
+
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="custom-brown-text darken-1 mdi-navigation-menu"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">
-                    <i class="custom-brown-text darken-1 fa fa-linkedin"></i>
-                </a>
+       
+                <ul class="hide-on-med-and-down" id="nav-links-internal">
+                    <li data-link="home"><a class="custom-brown-text darken-1" href="/">Who I Am</a></li>
+                    <li data-link="projects"><a class="custom-brown-text darken-1" href="/projects">Projects</a></li>
+                    <li data-link="objectives"><a class="custom-brown-text darken-1" href="/objectives">Objectives</a></li>
+                    <li data-link="resume"><a class="custom-brown-text darken-1" href="#!">Resume</a></li>
+                    <li data-link="contact"><a class="custom-brown-text darken-1" href="/contact">Contact</a></li>
+                </ul>
+
+                <ul id="slide-out" class="side-nav custom-brown darken-1">
+                    <li data-link="home"><a href="/">Who I Am</a></li>
+                    <li data-link="projects"><a href="/projects">Projects</a></li>
+                    <li data-link="objectives"><a href="/objectives">Objectives</a></li>
+                    <li data-link="resume"><a href="#!">Resume</a></li>
+                    <li data-link="contact"><a href="/contact">Contact</a></li>
+                    <li><a href="https://github.com/FunnyGopher" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">linkedIn</a></li>
+                </ul>
             </div>
-
-            <a href="#" data-activates="slide-out" class="button-collapse">
-                <i class="custom-brown-text darken-1 mdi-navigation-menu"></i>
-            </a>
-   
-            <ul class="hide-on-med-and-down" id="nav-links-internal">
-                <li data-link="home"><a class="custom-brown-text darken-1" href="/">Who I Am</a></li>
-                <li data-link="portfolio"><a class="custom-brown-text darken-1" href="/portfolio">Portfolio</a></li>
-                <li data-link="resume"><a class="custom-brown-text darken-1" href="#!">Resume</a></li>
-                <li data-link="contact"><a class="custom-brown-text darken-1" href="/contact">Contact</a></li>
-            </ul>
-
-            <ul id="slide-out" class="side-nav custom-brown darken-1">
-                <li data-link="home"><a href="/">Who I Am</a></li>
-                <li data-link="portfolio"><a href="/portfolio">Portfolio</a></li>
-                <li data-link="resume"><a href="#!">Resume</a></li>
-                <li data-link="contact"><a href="/contact">Contact</a></li>
-                <li><a href="https://github.com/FunnyGopher" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/huntsmankyle" target="_blank">linkedIn</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>
 <script> 
     // Stamp out a navbar and register it with it's own tag

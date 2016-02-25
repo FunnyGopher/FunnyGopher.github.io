@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyle's Website</title>
+    <meta name="description" content="A website housing things about Kyle">
+    <meta name="author" content="Kyle Huntsman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- build:css /styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/colors.css"/>
+    <link rel="stylesheet" href="/styles/util.css"/>
+    <link rel="stylesheet" href="/styles/x-navbar.css"/>
+    <!-- endbuild -->
+
+    <!-- build:css /styles/objectives.css -->
+    <link rel="stylesheet" href="/styles/objectives.css"/>
+    <!-- endbuild -->
+
+    <!-- build:js /scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Materialize/bin/materialize.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js /scripts/main.js -->
+    <script src="/scripts/template-util.js"></script>
+    <!-- endbuild -->
+
+    <!-- HTML Imports -->
+    <link rel="import" href="/components/x-navbar.html">
+</head>
+<body>
+    <x-navbar data-link="objectives"></x-navbar>
+	<div class="body-wrapper custom-brown darken-1">
+		<div class="container">
+            <div class="row">
+                <div class="col s12 m12 l3 hide-on-med-and-down">
+                    <ul class="table-of-contents">
+                        <li><a href="#objective-1">Objective I</a></li>
+                        <li><a href="#objective-2">Objective II</a></li>
+                        <li><a href="#objective-3">Objective III</a></li>
+                        <li><a href="#objective-4">Objective IV</a></li>
+                        <li><a href="#objective-5">Objective V</a></li>
+                        <li><a href="#objective-6">Objective VI</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m12 l9 push-l3">
+                    <!-- Objective 1-->
+                    <div class="banner row">
+                        <div class="col s12 m12 l12 custom-gray-text darken-1">
+                            <div class="banner-title">Objectives</div>
+                            <div class="banner-subtitle">I told you I do softwares</div>
+                        </div>
+                    </div>
+                    <div class="objective scrollspy" id="objective-1">
+                        <div class="row">
+                            <div class="objective-description col s12 m10 l8">
+                                <div class="custom-gray-text darken-1">
+                                    <h1>Objective I</h1>
+                                    <p>Follow a software development process to analyze a problem, and to design, build, and test software solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>  
+
+                        <div class="objective-container">
+                            <!-- CrowdDJ -->
+                            <div class="project row" id="crowddj">
+                                <div class="project-description col s12 m7 l8">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>CrowdDJ</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>CrowdDJ used a modified scrum process, using every two weeks as a sprint. Features to be completed were initially created for each sprint. After each sprint, there was a review session about what was and was not completed. Tasks for future sprints were then adjusted according to ahead or behind schedule the project was.</p>
+                                    </div>
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="http://placehold.it/200x350/61605D">
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            
+
+                            <!-- Partí -->
+                            <div class="project-alt row">
+                                <div class="project-description col s12 m7 l8 ">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>Partí</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>Partí used a feature driven development process, where key features were initially designed by the team. Each team member was then given a feature to work on. As features were completed, they were reviewed, and added to the main build.</p>
+
+                                        <p><strong>Team: </strong>Myself, Brandon Olson & Justin Fern</p>
+                                    </div>
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="http://placehold.it/200x350/61605D">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objective 2-->
+                    <div class="objective scrollspy" id="objective-2">
+                        <div class="row">
+                            <div class="objective-description col s12 m10 l8">
+                                <div class="custom-gray-text darken-1">
+                                    <h1>Objective II</h1>
+                                    <p>Demonstrate software development skills using more than one programming language and development environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+
+                        <div class="objective-container">
+                            <!-- CrowdDJ -->
+                            <div class="project row" id="crowddj">
+                                <div class="project-description col s12 m7 l8 ">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>CrowdDJ</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>CrowdDJ is a Java desktop application with an acompannying Android application. The desktop application was developed in <strong>Java 8</strong> using <strong>JetBrains's IntelliJ IDE</strong>, while the Android application was developed using the <strong>Android SDK</strong> in <strong>Google's Android Studio</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="http://placehold.it/200x350/61605D">
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+
+                            <!-- Fredricks Quest for Hair -->
+                            <div class="project-alt row">
+                                <div class="project-description col s12 m7 l8 ">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>Fredrick's Quest for Hair</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>Fredrick's Quest for Hair is a desktop game written in <strong>Python</strong>, using the PyGame library for ease of development. The game was developed using <strong>IDLE</strong>.</p>
+
+                                        <p><strong>Team: </strong>Myself, Nathan Reline, Austin Ronquillo, & Ryan Simpson</p>
+                                    </div>
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="http://placehold.it/350x250/61605D">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objective 3-->
+                    <div class="objective scrollspy" id="objective-3">
+                        <div class="row">
+                            <div class="objective-description col s12 m10 l8 ">
+                                <div class="custom-gray-text darken-1">
+                                    <h1>Objective III</h1>
+                                    <p>Design and implement software solutions across multiple platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div> 
+
+                        <div class="objective-container">
+                            <!-- This Website -->
+                            <div class="project row">
+                                <div class="project-description col s12 m7 l8 ">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>Kyles.Place</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>Kyles.Place is a <strong>responsive website</strong> developed from scratch using HTML5 with Webcomponents, CSS3 and the Sass precompiler, jQuery Javascript libraries, and the Materialize styling library.</p>
+                                    </div>  
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="/images/logo-1448-865.png">
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+
+                            <!-- BwaaahButton -->
+                            <div class="project-alt row">
+                                <div class="project-description col s12 m7 l8 ">
+                                    <div class="custom-gray-text darken-1">
+                                        <h1>BwaaahButton</h1>
+
+                                        <p><strong>How Objective was met</strong><br/>BwaaahButton is a small <strong>Android mobile application</strong> developed with the Android SDK. The application was built to support Android 4.0 Ice Cream Sandwich, and targeted towards the major realease at the time, Android 5.0 Lollipop.</p>
+                                    </div>  
+                                </div>
+                                <div class="project-img col s12 m5 l4">
+                                    <img src="http://placehold.it/200x350/61605D">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objective 4-->
+                    <div class="objective row scrollspy" id="objective-4">
+                        <div class="objective-description col s12 m10 l8 ">
+                            <div class="custom-gray-text darken-1">
+                                <h1>Objective IV</h1>
+                                <p>Design and implement software solutions for mobile devices, embedded systems, or standalone systems.</p>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <!-- Objective 5-->
+                    <div class="objective row scrollspy" id="objective-5">
+                        <div class="objective-description col s12 m10 l8 ">
+                            <div class="custom-gray-text darken-1">
+                                <h1>Objective V</h1>
+                                <p>Document the planning and development of software applications using industry standard tools, techniques, and processes.</p>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <!-- Objective 6-->
+                    <div class="objective row scrollspy" id="objective-6">
+                        <div class="objective-description col s12 m10 l8 ">
+                            <div class="custom-gray-text darken-1">
+                                <h1>Objective VI</h1>
+                                <p>Within software solutions describe, implement and analyze data structure techniques such as lists, trees, hash tables, graphs, along with sorting and searching agorithms.</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<footer class="custom-gray darken-1 valign-wrapper">
+        </footer>
+	</div>
+    <script>
+        //$('.navbar').scrollspy({offest: 56});
+    </script>
+</body>
+</html>
