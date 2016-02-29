@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kyle's Website</title>
+    <meta name="description" content="A website housing things about Kyle">
+    <meta name="author" content="Kyle Huntsman">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+
+    <!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- build:css /styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/Materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css"/>
+    <link rel="stylesheet" href="/styles/colors.css"/>
+    <link rel="stylesheet" href="/styles/util.css"/>
+    <link rel="stylesheet" href="/styles/x-navbar.css"/>
+    <!-- endbuild -->
+
+    <!-- build:css /styles/resume.css -->
+    <link rel="stylesheet" href="/styles/resume.css"/>
+    <!-- endbuild -->
+
+    <!-- build:js /scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Materialize/bin/materialize.js"></script>
+    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js /scripts/main.js -->
+    <script src="/scripts/template-util.js"></script>
+    <!-- endbuild -->
+
+    <!-- HTML Imports -->
+    <link rel="import" href="/components/x-navbar.html">
+</head>
+<body>
+    <div class="body-wrapper custom-brown darken-1">
+        <x-navbar data-link="resume"></x-navbar>
+
+        <div class="container">
+            <div class="banner row">
+                <div class="col s12 center-when-small m12 l12 custom-gray-text darken-1">
+                    <div class="banner-title">Resumé</div>
+                    <div class="banner-subtitle">It's official looking</div>
+                </div>
+            </div>
+
+            <iframe src="https://drive.google.com/file/d/0B0ZbiJIDejtMSHFWX09vaWZYU2s/preview" width="480" height="620"></iframe>
+        </div>
+
+        <footer class="custom-gray darken-1 valign-wrapper" id="main-footer">
+            <span class="valign custom-brown-text darken-1">I made this website</span>
+        </footer>
+    </div>
+</body>
+</html>
