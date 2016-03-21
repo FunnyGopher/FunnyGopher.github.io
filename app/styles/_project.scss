@@ -41,6 +41,19 @@
         a {
             color: inherit;
         }
+
+        .links {
+            text-align: right;
+            font-size: 17px;
+
+            div {
+                padding: 4px;
+            }
+
+            i {
+                padding-right: 8px;
+            }
+        }
     }
 
     .project-img {
@@ -50,6 +63,12 @@
             margin-top: 2.5vw;
             max-width: 100%;
             height: auto;
+        }
+
+        .shadow {
+            -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.3);
         }
     }
 }
@@ -70,6 +89,10 @@
             @media only screen and (min-width: $screen-small) {
                 text-align: left;
             }
+        }
+
+        .links {
+            text-align: left;
         }
     }
 }

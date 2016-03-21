@@ -21,5 +21,7 @@ $(document).ready(function() {
     $(document).on('WebComponentsReady', function() {
         $(".button-collapse").sideNav();
         $('.scrollspy').scrollSpy();
+        $('.materialboxed').materialbox();
+        $('.modal-trigger').leanModal();
     })
 });

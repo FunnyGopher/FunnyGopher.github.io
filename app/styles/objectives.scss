@@ -2,6 +2,22 @@
 
 @import 'project';
 
+.banner-title {
+    font-size: 14.2vw;
+
+    @media only screen and (min-width: $screen-small) {
+        font-size: 9.8vw;
+    }
+
+    @media only screen and (min-width: $screen-medium) {
+        font-size: 8.2vw;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        font-size: 7.9vw;
+    }
+}
+
 .table-of-contents {
     top: 0;
     position: fixed;
